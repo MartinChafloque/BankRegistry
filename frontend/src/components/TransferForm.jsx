@@ -43,6 +43,7 @@ const TransferForm = ({ setUpdatedTransfer }) => {
           <Form.Label>Cantidad a Enviar</Form.Label>
           <Form.Control
             type="number"
+            min="0"
             placeholder="Digite el monto a enviar"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
